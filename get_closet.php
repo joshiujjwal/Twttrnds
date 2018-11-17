@@ -3,10 +3,10 @@
 require_once('twitter_proxy_closet.php');
 
 // Twitter OAuth Config options
-$oauth_access_token = '517801153-tojQ0UocezSfqGHvKyg70M4zmqOagTF25YvFyU2M';
-$oauth_access_token_secret = 'O2OWryesKJyX8EtYY5AsQnw45DqPNH7BEl2cMLcLbNQqe';
-$consumer_key = 'pHWqXUqzDKmnzH73bYAfMIPeT';
-$consumer_secret = '2Zq6dGr9RBy2rsnmmlKbktbtz5zPuuhyMfLg6MRd5drVoVqgdZ';
+$oauth_access_token = '';
+$oauth_access_token_secret = '';
+$consumer_key = '';
+$consumer_secret = '';
 if(isset($_GET['lat']))
     {
 		$query =(string)$_GET['lat'];
