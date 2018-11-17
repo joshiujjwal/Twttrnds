@@ -240,7 +240,7 @@ setInterval(function() {
 
     for (var x = 0; x < arr_map.length; x++) {
 		
-        $.getJSON('https://maps.googleapis.com/maps/api/geocode/json?address='+arr_map[x]+'&sensor=false'+"&key=", null, function (data) {
+        $.getJSON('https://maps.googleapis.com/maps/api/geocode/json?address='+arr_map[x]+'&sensor=false'+'&key=AIzaSyBqTuOgG5AIJrAtaLYlRqrvsxbxnHpYw14', null, function (data) {
             var p = data.results[0].geometry.location;
             var latlng = new google.maps.LatLng(p.lat, p.lng);
             new google.maps.Marker({
