@@ -25,7 +25,10 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
 
-resources:
-  pipelines:
-  - pipeline: MYPROJECTS # identifier for the resource (used in pipeline resource variables)
-    source: TwitterTrnds # name of the pipeline that produces an artifact
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure for Students(b2458318-b2ab-4e8f-9e08-8b9996887544)'
+    appType: 'webAppLinux'
+    WebAppName: 'twttrnds'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
