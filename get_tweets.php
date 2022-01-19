@@ -3,10 +3,12 @@
 require_once('twitter_proxy.php');
 
 // Twitter OAuth Config options
-$oauth_access_token = '';
-$oauth_access_token_secret = '';
-$consumer_key = '';
-$consumer_secret = '';
+// Twitter OAuth Config options
+$oauth_access_token = '517801153-GWTN0trhRp6fi52KkK3exDuusb7fXDKSDgJ8YHbc';
+$oauth_access_token_secret = 'VujpgwmlujyhuHIz0pyaRBMbvA8LOs99fiJNdphJmWdYG';
+$consumer_key = 'c2FpP81DX0tsJEKChYG6fW0yF';
+$consumer_secret = 'lZeUUJh1DQtXNu6ZAn45bL3SYdFt4mKJR9VA2ofVTrJhfYYlWI';
+
 //$user_id = '1';
 $id = '1';
 //$screen_name = 'ujjwaljoshi93';
